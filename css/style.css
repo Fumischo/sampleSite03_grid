@@ -274,3 +274,68 @@ body.top .header-button span {
     display: inline;
   }
 }
+
+/* profile画面 */
+.profile .header-logo path,/* svg画像のpath */
+.works .header-logo path {
+  fill: #292929; /* fillはpathなどのカラー指定を塗り潰す時のプロパティ */
+}
+
+.profile main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(229, 229, 229, .8);
+  line-height: 1.6;
+}
+
+.profile .article-inner {
+  max-width: 460px;
+}
+
+.article-title {
+  margin-bottom: .5em;
+  font-family: 'Noto Sans JP' , sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: .05em;
+  text-align: center;
+}
+
+.article-title_sub {
+  margin-bottom: 1em;
+  font-size: 21px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .article-title_sub {
+    font-size: 24px;
+  }
+}
+
+.article-title_sub span {
+  display: inline-block;
+  margin-left: 1em;
+  border-left: 1px solid #292929;
+  padding-left: 1em;
+  font-weight: normal;
+}
+
+.profile-list {}
+.profile-list dt {
+  clear: left;
+  float: left;
+  margin-right: 2em;
+}
+
+.profile-list dd {
+  overflow: hidden;
+}
