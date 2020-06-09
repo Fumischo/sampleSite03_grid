@@ -1,3 +1,4 @@
+// @ts-ignore
 jQuery(function ($) {
   $('.header-button').on('click', function () {
     $('body').toggleClass('open');
